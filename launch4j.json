@@ -4,7 +4,7 @@
   "homepage": "https://launch4j.sourceforge.net/",
   "license": "BSD-Style",
   "url": "https://downloads.sourceforge.net/project/launch4j/launch4j-3/3.50/launch4j-3.50-win32.zip",
-  "hash": "d7b97801e1b8960ab4b4cd5be21b05f0d59890b8ac2901b4a14217ec1f2d505f",
+  "hash": "93621e5007106a01ad3cbb84871886e8e8d6a6beca7111842eaaf0cf85b57767",
   "extract_dir": "launch4j",
   "bin": [
     "launch4j.exe",
