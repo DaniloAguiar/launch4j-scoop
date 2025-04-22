@@ -7,17 +7,12 @@
   "hash": "93621e5007106a01ad3cbb84871886e8e8d6a6beca7111842eaaf0cf85b57767",
   "extract_dir": "launch4j",
   "bin": [
-    "launch4j.exe",
-    "sign4j.exe"
+    "launch4j.exe"
   ],
   "shortcuts": [
     [
       "launch4j.exe",
       "Launch4j"
-    ],
-    [
-      "sign4j.exe",
-      "Sign4j"
     ]
   ],
   "post_install": [
