@@ -21,10 +21,10 @@
     ]
   ],
   "post_install": [
-    "if (!(Test-Path \"$env:SCOOP\\apps\\launch4j\\current\\sign4j.exe\")) {",
+    "if (!(Test-Path \"$env:SCOOP\\apps\\launch4j\\current\\sign4j\\sign4j.exe\")) {",
     "    Write-Host 'sign4j.exe not found, skipping shim creation'",
     "} else {",
-    "    New-Item -ItemType SymbolicLink -Path \"$env:SCOOP\\shims\\sign4j.exe\" -Target \"$env:SCOOP\\apps\\launch4j\\current\\sign4j.exe\"",
+    "    New-Item -ItemType SymbolicLink -Path \"$env:SCOOP\\shims\\sign4j.exe\" -Target \"$env:SCOOP\\apps\\launch4j\\current\\sign4j\\sign4j.exe\"",
     "    Write-Host 'Shim for sign4j created successfully!'",
     "}"
   ]
