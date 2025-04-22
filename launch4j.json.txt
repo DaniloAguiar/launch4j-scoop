@@ -1,0 +1,23 @@
+{
+  "version": "3.50",
+  "description": "Launch4j is a cross-platform tool for wrapping Java applications into Windows native executables.",
+  "homepage": "https://launch4j.sourceforge.net/",
+  "license": "BSD-Style",
+  "url": "https://downloads.sourceforge.net/project/launch4j/launch4j-3/3.50/launch4j-3.50-win32.zip",
+  "hash": "d7b97801e1b8960ab4b4cd5be21b05f0d59890b8ac2901b4a14217ec1f2d505f",
+  "extract_dir": "launch4j",
+  "bin": [
+    "launch4j.exe",
+    "sign4j.exe"
+  ],
+  "shortcuts": [
+    [
+      "launch4j.exe",
+      "Launch4j"
+    ],
+    [
+      "sign4j.exe",
+      "Sign4j"
+    ]
+  ]
+}
