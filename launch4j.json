@@ -13,14 +13,21 @@
     [
       "launch4j.exe",
       "Launch4j"
+    ],
+    [
+      "sign4j\\sign4j.exe",
+      "Sign4j"
     ]
   ],
   "post_install": [
-    "if (!(Test-Path \"$env:SCOOP\\apps\\launch4j\\current\\sign4j\\sign4j.exe\")) {",
-    "    Write-Host 'sign4j.exe not found, skipping shim creation'",
+    "Write-Host 'Creating shim for sign4j manually using scoop shim add...'",
+    "$sign4jPath = Join-Path \"$dir\" 'sign4j\\sign4j.exe'",
+    "if (Test-Path $sign4jPath) {",
+    "    scoop shim rm sign4j",
+    "    scoop shim add sign4j $sign4jPath",
+    "    Write-Host 'Shim for sign4j created successfully.'",
     "} else {",
-    "    New-Item -ItemType SymbolicLink -Path \"$env:SCOOP\\shims\\sign4j.exe\" -Target \"$env:SCOOP\\apps\\launch4j\\current\\sign4j\\sign4j.exe\"",
-    "    Write-Host 'Shim for sign4j created successfully!'",
+    "    Write-Host 'sign4j.exe not found. Skipping shim.'",
     "}"
   ]
 }
